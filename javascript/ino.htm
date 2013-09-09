@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<body>
+<script type="text/javascript">
+	function getRandomInt (min, max) {
+	    return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	// start timing
+	var start = performance.now();
+
+	var receipts = new Array();
+	var totals = new Array();
+	var iterations,
+		done,
+		newnum,
+		totalslength;
+
+	// loop
+	for (var i = 0; i <= 100000; i++) {
+
+		// initialize the receipts array
+		for (var r = 1; r <= 98; r++) { receipts[r] = 0; }
+		iterations = 0;
+		done = 98;
+
+		// loop until 'done' has been subtracted to zero
+		while ( done > 0 ) {
+
+			// generate random number
+			newnum = getRandomInt(1,98);
+
+			// if the number is new then mark it as seen
+			if ( receipts[newnum] == 0 ) {
+				receipts[newnum] = 1;
+
+				// decrease 'done'
+				done--;
+			}
+
+			// increase this round's count
+			iterations++;
+		}
+
+		// assign number of indices to var
+		totalslength = totals.length;
+
+		// if the array index has been defined increment the value
+		if ( iterations <= totalslength) {
+			totals[iterations]++;
+		}
+		// else add in zero values for all the indices up to the new value and then add the new value as one
+		else {
+			for ( var a = totalslength; a < iterations; a++ )  {
+				totals[a] = 0;
+			}
+			totals[iterations] = 1;
+		}
+
+	}
+	// remove the first elements since the array is zero-based but the range starts at 1
+	totals.pop();
+	console.log(totals.join(', '));
+
+	var end = performance.now();
+
+	var sum = 0;
+
+	totals.forEach(function(a,b){
+		sum += a;
+	})
+
+	console.log( sum +" iterations in "+ ( ( end - start ) / 1000 ) +" seconds.");
+</script>

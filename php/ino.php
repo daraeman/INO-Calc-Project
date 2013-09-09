@@ -5,14 +5,11 @@
 	$mtime = $mtime[1] + $mtime[0];
 	$starttime = $mtime;
 
-## delete later
-$maxit = 0;
-
 # loop
-for ($i = 1; $i <= 100000; $i++) {
+for ($i = 1; $i <= 10000; $i++) {
 
 	# initialize the receipts array
-	$receipts = array_combine( range(1,1000), 0);
+	$receipts = array_combine( range(1,98), 0);
 	$iterations = 0;
 	$done = 98;
 
@@ -40,7 +37,7 @@ for ($i = 1; $i <= 100000; $i++) {
 	# if the array index has been defined increment the value
 	if ( $iterations <= $totalslength) {
 		$totals[$iterations]++;
-
+	}
 	# else add in zero values for all the indices up to the new value and then add the new value as one
 	else {
 		for ( $a = $totalslength; $a < $iterations; $a++ )  {
@@ -51,9 +48,8 @@ for ($i = 1; $i <= 100000; $i++) {
 
 }
 # remove the first elements since the array is zero-based but the range starts at 1
-//totals.shift;
-echo implode(", ", $totals)."<hr>";
-
+array_shift($totals);
+echo implode(", ", $totals)."<br>";
 
 $mtime = microtime();
 $mtime = explode(" ",$mtime);
