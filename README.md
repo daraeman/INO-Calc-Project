@@ -9,4 +9,4 @@ Currently written in:
 * Python
 * Java
 
-*Feel free to correct any mistakes. There's prolly a ton.
+*Feel free to correct any mistakes. There's prolly a ton.*
