@@ -19,8 +19,8 @@ public class ino {
         int sum = 0;
         String delim;
 
-        // loop 20 times
-        for (int i = 0; i < 1000000; i++) {
+        // loop
+        for (int i = 0; i < 100000; i++) {
 
             // initialize the receipts array
             receipts = new int[98];
