@@ -11,8 +11,8 @@ totals = Array.new
 
 maxit = 0
 
-# loop 20 times
-for i in 1..10000
+# loop
+for i in 1..100000
 
 	# initialize the receipts array
 	receipts = Array.new(98,0)

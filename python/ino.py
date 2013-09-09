@@ -9,8 +9,8 @@ import random
 # initialize the totals array
 totals = array.array( 'i' , (0 for i in range(0,2) ) )
 
-# loop 20 times
-for i in range(10000):
+# loop
+for i in range(100000):
 
     # initialize the receipts array
     receipts = array.array( 'i' , (0 for i in range(0,98) ) )
