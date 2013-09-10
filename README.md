@@ -10,5 +10,6 @@ Currently written in:
 * Java (100000 iterations in 1.482267 seconds)
 * PHP (100000 iterations in 31.7638840675 seconds)
 * Javascript (100000 iterations in 1.1129259999979695 seconds)
+* C (100000 iterations in 1.125626 seconds)
 
 *Feel free to correct any mistakes. There's prolly a ton.*
