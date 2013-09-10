@@ -8,5 +8,7 @@ Currently written in:
 * Ruby
 * Python
 * Java
+* PHP
+* Javascript
 
 *Feel free to correct any mistakes. There's prolly a ton.*
