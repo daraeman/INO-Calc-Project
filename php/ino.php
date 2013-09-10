@@ -5,6 +5,8 @@
 	$mtime = $mtime[1] + $mtime[0];
 	$starttime = $mtime;
 
+$totals[0] = 0;
+
 # loop
 for ($i = 1; $i <= 100; $i++) {
 
