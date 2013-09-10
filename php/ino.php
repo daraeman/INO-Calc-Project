@@ -8,7 +8,7 @@
 $totals[0] = 0;
 
 # loop
-for ($i = 1; $i <= 100; $i++) {
+for ($i = 1; $i <= 100000; $i++) {
 
 	# initialize the receipts array
 	$receipts = array_fill(1, 98, 0);
