@@ -6,10 +6,10 @@
 	$starttime = $mtime;
 
 # loop
-for ($i = 1; $i <= 10000; $i++) {
+for ($i = 1; $i <= 100; $i++) {
 
 	# initialize the receipts array
-	$receipts = array_combine( range(1,98), 0);
+	$receipts = array_fill(1, 98, 0);
 	$iterations = 0;
 	$done = 98;
 
