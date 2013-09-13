@@ -11,6 +11,9 @@ main() {
 
 	START;
 
+	// seed rand 
+	srand (time(NULL));
+
 	int totals[10000] = {0};
 	int a, b, newnum, newindex, newval, i;
 
