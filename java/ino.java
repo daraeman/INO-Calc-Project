@@ -68,7 +68,7 @@ public class ino {
         listString = "";
 
         for (int s : totals) {
-            listString += s + ", ";
+            listString += s + ",";
         }
 
         for (int i : totals) {

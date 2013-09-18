@@ -51,7 +51,7 @@ for ($i = 1; $i <= 100000; $i++) {
 }
 # remove the first elements since the array is zero-based but the range starts at 1
 array_shift($totals);
-echo implode(", ", $totals)."<br>";
+echo implode(",", $totals)."\n";
 
 $mtime = microtime();
 $mtime = explode(" ",$mtime);

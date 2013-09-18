@@ -56,7 +56,7 @@ for i in range(100000):
 
 # remove the first elements since the array is zero-based but the range starts at 1
 totals.pop(0);
-print ", ".join([str(x) for x in totals])
+print ",".join([str(x) for x in totals])
 #print "Total Iterations", sum(totals)
 
 print sum(totals), 'iterations in', time.time()-start, 'seconds.'

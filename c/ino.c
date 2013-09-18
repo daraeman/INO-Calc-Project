@@ -47,7 +47,7 @@ main() {
 	int sum = 0;
 
 	for (c = 0; c <= (sizeof(totals) / sizeof(int)) - 2; c++) {
-		printf("%i, ",totals[c]);
+		printf("%i,",totals[c]);
 		sum += totals[c];
 	}
 

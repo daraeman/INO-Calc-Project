@@ -55,6 +55,6 @@ for i in 1..100000
 end
 # remove the first elements since the array is zero-based but the range starts at 1
 totals.shift;
-print totals * ', '
+print totals * ','
 
 print "\n",totals.inject(:+), " iterations in #{Time.now - start} seconds.\n"
