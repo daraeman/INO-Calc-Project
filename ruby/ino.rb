@@ -12,7 +12,7 @@ totals = Array.new
 maxit = 0
 
 # loop
-for i in 1..100000
+for i in 1..1000000
 
 	# initialize the receipts array
 	receipts = Array.new(98,0)
